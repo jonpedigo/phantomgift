@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@keyframes logo-glow {
+  from {background-color: #eaeaea;}
+  to {background-color: #f2f2f2;}
+}
+
+.App-logo {
+  // animation: App-logo-spin infinite 20s linear;
+  animation: logo-glow infinite 1.5s linear;
+  animation-direction: alternate;
+  margin: 20px;
+}
+
+.App-header {
+  &--phantom {
+    font-family: 'Press Start 2P', Courier;
+    font-weight: 1000;
+    font-size: calc(10px + 2vmin);
+    color: #9a009a;
+  }
+
+  font-size: calc(10px + 1vmin);
+  color: #888;
+}
+
+.App-subheader {
+  font-family: Courier;
+  color: #555;
+}
+
+.App-body {
+  text-align: left;
+  margin-top: 20px;
+  width: 400px;
+
+  font-family: Courier;
+  color: #555;
+
+  &__header {
+
+  }
+  &__link {
+
+  }
+  &__description {
+
+  }
+  &__image {
+    width: 100%;
+
+  }
+
+  &__embed {
+    width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;
+    iframe {
+      width: 100%; height: 100%; position: absolute;
+    }
+  }
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
